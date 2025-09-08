@@ -1,1 +1,80 @@
 /* Desktop Styles */
+header {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* .headerContainer {
+  padding-top: 20px;
+} */
+
+
+
+.burgerMenuContainer {
+  display: none;
+}
+
+nav {
+  height: 4rem;
+  margin-top: 2rem;
+  flex: 1 1 80%;
+  display: flex;
+  justify-content: flex-end;
+  /* For mobile toggle */
+  overflow: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 4px;
+  border-bottom: none;
+}
+
+nav ul li a {
+  margin: 0 15px;
+  border: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+
+
+main {
+  max-width: 1280px;
+  margin: 0 auto 4rem auto;
+}
+
+
+
+.articles {
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+  gap: 3%;
+}
+
+.articles > div {
+  flex: 1 1 25%;
+  padding: 0;
+  /* margin: 0 20px; */
+}
+
+/* .articles > div:first-child {
+  margin-left: 0;
+}
+
+.articles > div:last-child {
+  margin-right: 0;
+} */
+
+
+
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
