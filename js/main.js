@@ -1,3 +1,4 @@
+// iife
 (function () {
   const burgerMenu = document.querySelector(".burgerMenuContainer img");
   const navBar = document.querySelector("nav");
@@ -31,4 +32,4 @@
 
   // initial setup
   updateMenuOnResize();
-})();
+})(); // iife - Immediately Invoked Function Expression - call it immediately

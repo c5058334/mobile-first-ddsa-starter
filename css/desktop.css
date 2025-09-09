@@ -10,18 +10,21 @@ header {
 
 
 
-.burgerMenuContainer {
-  display: none;
-}
-
 nav {
-  height: 4rem;
+  /* height: 4rem; */
   margin-top: 2rem;
   flex: 1 1 80%;
   display: flex;
   justify-content: flex-end;
   /* For mobile toggle */
-  overflow: auto;
+  overflow: visible;
+}
+
+nav.desktop {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
 }
 
 nav ul {
@@ -40,6 +43,10 @@ nav ul li a {
 
 nav ul li a:hover {
   border-bottom: 3px solid #fff;
+}
+
+.burgerMenuContainer {
+  display: none;
 }
 
 

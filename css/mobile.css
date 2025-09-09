@@ -29,6 +29,14 @@ header > div {
 
 nav {
     flex: 1 1 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    max-height:0;
+}
+
+nav.open {
+    max-height: 10rem;
+    /* expands naturally */
 }
 
 nav ul {
@@ -46,6 +54,22 @@ nav ul li a {
     color:#fff;
     text-decoration: none;
     display: block;
+}
+
+.burgerMenuContainer img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+/* default "menu" icon */
+.burgerMenuContainer img {
+    content: url("images/whiteMenu.svg");
+}
+
+/* when open, show "close" icon */
+.burgerMenuContainer img.open {
+    content: url("images/whiteClose.svg");
 }
 
 
